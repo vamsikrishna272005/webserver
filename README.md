@@ -1,4 +1,6 @@
 # Developing a Simple Webserver
+Name : Vamsi Krishna G\
+Reference No. : 23006287
 
 # AIM:
 
@@ -27,7 +29,8 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
-```from http.server import HTTPServer,BaseHTTPRequestHandler
+
+from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content='''
 <!doctype html>
@@ -53,16 +56,19 @@ class MyServer(BaseHTTPRequestHandler):
         self.wfile.write(content.encode())
 
 print("This is my webserver") 
-server_address =('',80)
+server_address =('',8007)
 httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()```
+httpd.serve_forever()
 
 ## OUTPUT:
-### server output:
-![serveroutput](./server%20output.png)
 
-### client output
-![serveroutput](./client%20output.png)
+### serveroutput:
+![serveroutput](https://github.com/vamsikrishna272005/webserver/assets/147477015/d912d938-1d83-4f69-88ba-b804ebbbe765)
+
+
+### clientouput:
+![clientoutput](https://github.com/vamsikrishna272005/webserver/assets/147477015/5506959d-c4fe-47f8-8cdb-b0efc30121c0)
+
 
 ## RESULT:
 The program is executed succesfully
